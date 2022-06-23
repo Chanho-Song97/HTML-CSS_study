@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*전체선택자(*) -> 모든 태그들에게 적용할 때 사용*/
+        *{
+            color: red;
+        }
+        
+        /*태그선택자(태그명) -> 특정 태그들에게 적용할 때 사용*/
+        h1{
+            color: yellow;
+        }
+
+        /*클래스선택자(.) -> 특정 클래스가 있는 태그들에게 적용할 때 사용*/
+        .txt{
+            color:green;
+        }
+
+        /*아이디선택자(#) -> 특정 아이디가 있는 태그들에게 적용할 때 사용*/
+        #text{
+            color: pink;
+        }
+        /* 
+        선택자의 우선순위
+        전체(*) < 태그 < 클래스(.) < 아이디(#) < 인라인스타일 < !important
+        */
+
+    </style>
+</head>
+<body>
+    <h1 style="color:red">h1태그 첫번째</h1>
+    <h1 class="txt">h1태그 두번째</h1>
+    <h3 class="txt">h3태그 첫번째</h3>
+    <h3 id="text">h3태그 두번째</h3>
+</body>
+</html>
